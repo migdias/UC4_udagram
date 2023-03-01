@@ -9,6 +9,12 @@ export const s3 = new AWS.S3({
   params: { Bucket: config.aws_media_bucket },
 });
 
+const credentials = new AWS.Credentials({
+  accessKeyId: config.aws_access_key,
+  secretAccessKey: config.aws_secret,
+  sessionToken: config.aws_sessionToken
+})
+
 // Generates an AWS signed URL for retrieving objects
 export function getGetSignedUrl(key: string): string {
   const signedUrlExpireSeconds = 60 * 5;
@@ -17,6 +23,7 @@ export function getGetSignedUrl(key: string): string {
     Bucket: config.aws_media_bucket,
     Key: key,
     Expires: signedUrlExpireSeconds,
+    credentials: credentials
   });
 }
 
@@ -28,5 +35,6 @@ export function getPutSignedUrl(key: string): string {
     Bucket: config.aws_media_bucket,
     Key: key,
     Expires: signedUrlExpireSeconds,
+    credentials: credentials
   });
 }
