@@ -14,25 +14,6 @@ You can visit my own deployed version [here](http://myawsbucket-7513648800086.s3
 Please refer to the [Screenshots](./Screenshots/) for more pictures on the status of the different moving parts of the app.
 
 
-### Diagram of infrastructure
-
-![Diagram](Diagram.png)
-
-### Dependencies
-
-```
-- Node v14.15.1 (LTS) or more recent. While older versions can work it is advisable to keep node to latest LTS version
-
-- npm 6.14.8 (LTS) or more recent, Yarn can work but was not tested for this project
-
-- AWS CLI v2, v1 can work but was not tested for this project
-
-- A RDS database running Postgres (might need to be reloaded because of ever-changing udacity credentials).
-
-- A S3 bucket for hosting uploaded pictures.
-
-```
-
 ### Installation
 
 Provision the necessary AWS services needed for running the application:
