@@ -18,6 +18,6 @@ This product is made using mainly AWS services for the hosting. On the deploymen
 
 ### Infrastructure Diagrams
 
-![Main AWS Infrastructure](Diagram.png)
+![Main AWS Infrastructure](../Diagram.png)
 
-![Deployment Pipeline Infrastructure](development_pipeline.png)
+![Deployment Pipeline Infrastructure](../development_pipeline.png)

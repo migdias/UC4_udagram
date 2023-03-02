@@ -8,4 +8,4 @@ This project makes use of CI/CD using a simple development and deployment pipeli
 2. After everything is tested locally, the changes are commited and pushed onto Github.
 3. CircleCI will detect a new commit has been made to Github and will trigger the deployment pipeline, building, linting, testing and deploying the backend and the frontend parts of the application.
 
-![Deployment Pipeline Infrastructure](development_pipeline.png)
+![Deployment Pipeline Infrastructure](../development_pipeline.png)
