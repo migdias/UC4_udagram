@@ -5,6 +5,19 @@
 In this application, you are able to create a user, login and add posts to it.
 This application is hosted on Amazon Web Services S3 Static bucket. It talks to an API for data fetching and saving (which in itself is hosted on Amazon RDS along with Elastic Beanstalk). Another S3 Bucket is used to save media content.
 
+You can visit my own deployed version [here](http://myawsbucket-7513648800086.s3-website-us-east-1.amazonaws.com).
+
+### Current Hosted version
+
+![Here is an example of how the frontend looks like.](Screenshots/frontend_example.png)
+
+Please refer to the [Screenshots](./Screenshots/) for more pictures on the status of the different moving parts of the app.
+
+
+### Diagram of infrastructure
+
+![Diagram](Diagram.png)
+
 ### Dependencies
 
 ```
