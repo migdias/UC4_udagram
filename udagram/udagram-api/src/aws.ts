@@ -5,8 +5,7 @@ import { config } from "./config/config";
 
 const credentials = new AWS.Credentials({
   accessKeyId: config.aws_access_key,
-  secretAccessKey: config.aws_secret,
-  sessionToken: config.aws_sessionToken
+  secretAccessKey: config.aws_secret
 })
 
 export const s3 = new AWS.S3({
